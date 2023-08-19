@@ -1,0 +1,74 @@
+/* ... Previous CSS styles ... */
+
+/* Style the login form */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the login container */
+body {
+    background-image: url('image/loginpage.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: rgba(192, 192, 192, 0.5);
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Added to limit the width of the form */
+    margin:100px auto 0 auto;; 
+    height: 250px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Make the inputs expand to 100% of the parent container */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: black; 
+}
+
+button {
+    background-color: #007BFF;
+    color: gold;
+    border: none;
+    padding: 10px 20px;
+    padding-left: 200px;
+    padding-right: 190px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.label-white {
+    color: black /* Set the desired label text color */
+}
+
+.toggle-password {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    margin-left: 5px; /* Adjust as needed */
+}

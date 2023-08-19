@@ -1,0 +1,62 @@
+.min-h-screen{
+    min-height: 100vh;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.font-bold{
+    font-weight: 900;
+}
+
+.my1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.my2{
+    margin-top: 26px;
+    margin-bottom: 26px;
+    text-align: center;
+    font-family: 'Courgette',sans-serif;
+}
+
+.px2{
+    padding-left:3px;
+    padding-right: 3px;
+}
+
+.text-blue{
+    color: rgb(222, 172, 45);
+}
+
+.btn{
+    padding: 7px 12px;
+    border: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    color:white;
+    background-color: rgb(222, 172, 45);
+}
+
