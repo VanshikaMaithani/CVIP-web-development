@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shortener</title>
+    <link rel="stylesheet" href="style.css"> 
+    <!-- ... (head section from the previous example) ... -->
+</head>
+<body>
+    <div class="container">
+        <h1>Link Shortener</h1>
+        <label for="original-link">Enter the URL to shorten:</label>
+        <input type="text" id="original-link" placeholder="https://example.com">
+        <button onclick="shortenLink()">Shorten</button>
+        <div id="shortened-link"></div>
+    </div>
+
+    <script>
+        function shortenLink() {
+            const originalLink = document.getElementById("original-link").value;
+
+            // Simulate shortening logic (in a real app, you'd use a server to generate the short link)
+            const shortLink = "https://short.link/" + Math.random().toString(36).substring(7);
+
+            const shortenedLinkElement = document.getElementById("shortened-link");
+            shortenedLinkElement.innerHTML = `
+                <p>Your shortened link:</p>
+                <a href="${shortLink}" target="_blank">${shortLink}</a>
+            `;
+        }
+        
+        // Simulate redirection to the original link when clicking the shortened link
+        document.getElementById("shortened-link").addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+            const originalLink = document.getElementById("original-link").value;
+            window.location.href = originalLink; // Redirect to the original link
+        });
+    </script>
+</body>
+</html>
